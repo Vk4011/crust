@@ -125,7 +125,7 @@ const Data = () => {
                     index % 2 === 0
                       ? "bg-gray-800 bg-opacity-50"
                       : "bg-gray-700 bg-opacity-50"
-                  } hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 transition-colors duration-700`}
+                  } hover:bg-gradient-to-r hover:from-indigo-500/20 hover:to-indigo-200/20 transition-colors duration-700`}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{

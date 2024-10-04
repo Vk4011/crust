@@ -31,8 +31,8 @@ const Data = () => {
       Email: item.email,
       Phone: item.phoneNumber,
       "Type Of Income": item.typeOfIncome,
-      "Business Name": item.businessName,
-      Turnover: item.businessTurnover,
+      "Business": item.businessName,
+     Income: item.businessTurnover,
       "Existing Loans": item.existingLoans,
       "Loan Requirement": item.loanRequirement,
       "Type Of Loan": item.typeOfLoan,
@@ -91,10 +91,10 @@ const Data = () => {
                   Type Of Income
                 </th>
                 <th className="px-2 md:px-4 py-2 md:py-3 text-left">
-                  Business Name
+                  Business
                 </th>
                 <th className="px-2 md:px-4 py-2 md:py-3 text-left">
-                  Turnover
+                 Income
                 </th>
                 <th className="px-2 md:px-4 py-2 md:py-3 text-left">
                   Existing Loans

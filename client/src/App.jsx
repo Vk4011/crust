@@ -11,12 +11,16 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import UserForm from "./components/UserForm";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Dashboard from "./pages/Dashboard";
+import SendOtp from "./auth/SendOtp";
+import NewPassword from "./auth/NewPassword";
+import { AuthProvider } from "./context/AuthContext";
 
 
 function App() {
   return (
     <>
+    <AuthProvider>
       <BrowserRouter>
       <Navbar/>
         <Routes>
@@ -29,11 +33,14 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/send-otp" element={<SendOtp />} />
+          <Route path="/changepassword" element={<NewPassword />} />
           
         </Routes>
         <Footer/>
       </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }
